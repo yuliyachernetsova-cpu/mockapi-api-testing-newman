@@ -20,5 +20,5 @@ jobs:
         run: |
           newman run "mockapi.io.postman_collection.json" \
             -e "mockapi.io.postman_environment.json" \
-            --env-var "base_Url=${{ secrets.BASE_URL }}" \
+            --env-var "base_url=${{ secrets.BASE_URL }}" \
             --reporters cli
